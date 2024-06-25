@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Pratice</title>
+
+    <style>
+        body{
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header,footer{
+            flex: 1 100%;
+        }
+
+        main{
+            flex:2;
+        }
+
+        aside{
+            flex:1;
+        }
+
+        header,main,aside,footer{
+            border: 5px solid salmon;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header{
+            height: 20vh;
+        }
+
+        footer{
+            height: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>Main</main>
+    <aside>Sidebar</aside>
+    <footer>Footer</footer>
+</body>
+</html>
