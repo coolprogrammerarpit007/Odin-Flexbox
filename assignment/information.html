@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Information</title>
+
+    <style>
+        .header{
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 2.5rem;
+        }
+
+        .containers{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid green; */
+            gap: 2.5rem;
+            /* flex: 1;
+            height: 20rem; */
+        }
+
+        .containers .container:nth-child(3) img{
+            margin-bottom: 1.2rem;
+        }
+        .containers .container:nth-child(3) .content{
+            margin-bottom: 2.3rem;
+        }
+
+        .content{
+            width: 60%;
+        }
+
+        .content p{
+            font-size: 1.5rem;
+            text-transform: capitalize;
+        }
+
+        .img-container{
+            width: 50%;
+        }
+
+        .img-container img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>information!</h1>
+    </div>
+
+    <div class="containers">
+        <div class="container">
+            <div class="img-container">
+                <img src="./imgs/barberry.png" alt="image">
+            </div>
+            <div class="content">
+                <p>this is a type of plant. we love this one.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img src="./imgs/chilli.png" alt="image">
+            </div>
+            <div class="content">
+                <p>this is another type of plant. is not it nice?</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img src="./imgs/pepper.png" alt="image">
+            </div>
+            <div class="content">
+                <p>we have so many plants. yay plants.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <img src="./imgs/saffron.png" alt="image">
+            </div>
+            <div class="content">
+                <p>I am running out of things o say about the plants!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
