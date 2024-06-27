@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    html{
+      font-size: 10px;
+    }
+    body{
+      background-color: antiquewhite;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-container{
+      background:#fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 2rem;
+      padding: 2rem;
+      border-radius: 1rem;
+      width: 37%;
+    }
+    .surprise-icon{
+      background-color: lightskyblue;
+      color: blue;
+      width: 3.8rem;
+      height: 3.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4rem;
+      border-radius: 50%;
+    }
+
+    .modal-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      /* border: 1px solid green; */
+    }
+
+    .top-content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* border: 1px solid red; */
+      width: 100%;
+    }
+
+    .top-content h3{
+      font-size: 2rem;
+    }
+
+    .top-content p{
+      font-size: 1.4rem;
+      background-color: gray;
+      padding: 0.8rem;
+      border-radius: 50%;
+    }
+
+    .main-content{
+      width: 80%;
+    }
+
+    .main-content p{
+      word-break: break-all;
+      list-style: 1.4;
+      font-size: 1.6rem;
+    }
+
+    .continue{
+      background-color: skyblue;
+      color: #fff;
+      border-radius: 0.5rem;
+      border: none;
+      padding: 1rem 2rem;
+    }
+
+    .cancel{
+      background-color: #fff;
+      border: 1px solid black;
+      color: skyblue;
+      padding:1rem 1.6rem ;
+      border-radius: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="modal-container">
+    <div class="surprise-icon">
+      <p>!</p>
+    </div>
+    <div class="modal-content">
+      <div class="top-content">
+        <h3>Are you sure want to do that?</h3>
+        <p>X</p>
+      </div>
+      <div class="main-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos incidunt sequi nemo, earum tempore vitae assumenda optio? Eos, modi quis!</p>
+      </div>
+      <div class="btns">
+        <button class="continue">Continue</button>
+        <button class="cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
