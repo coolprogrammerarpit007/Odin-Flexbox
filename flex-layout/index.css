@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.item{
+    color: #fff;
+}
+
+
+.navbar{
+    background-color: purple;
+}
+.sidebar{
+    background-color: skyblue;
+}
+.main-content{
+    background-color: green;
+}
+
+.footer{
+    background-color: bisque;
+}
+
+
+/* *************************************************** */
+/* *************************************************** */
+
+/* Flex Container */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar{
+    flex: 1 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.sidebar{
+    flex:1 20%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-size: 2rem;
+    gap: 2rem;
+
+}
+.main-content{
+    flex: 3 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    padding: 2rem;
+    gap: 2rem;
+}
+.footer{
+    flex: 1 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.box{
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    width: 20vh;
+    height: 35vh;
+    flex: 1 30%;
+}
+
